@@ -3,20 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleHeader.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleHeader.css" />
+    <link rel="stylesheet" href="./styleFooter.css">
   </head>
   <body>
-    <header>
-        <div id="topHeader">
-            <div id="logo">
-                <img src="./assets/logo-avanti.png">
-            </div>
-            <div id="searchBar">barra de pesquisa</div>
-            <div id="userProfile">usuario</div>
-            <div id="shoppingCart">icone carrinho</div>
-        </div> 
-         <nav>Barrinha de navegação</nav>
-    </header>
     <script src="script.js"></script>
+
+    <!--------------------------- Header --------------------------->
+
+    <header>
+      <div class="promotion">
+        <div class="discount">
+          Ganhe <span class="discountTen">R$10,00</span> de desconto no seu
+          primeiro pedido. Utilize o cupom
+          <span class="coupon">DESCONTO10</span>
+        </div>
+      </div>
+
+      <div class="topHeader">
+        <img src="./assets/logo-avanti.png" class="logoHeader" alt="Logo da Avanti" />
+        <label for="">
+          <input class="searchBar" placeholder="Digite o que você procura" />
+          <img src="./assets/icone-lupa.png" alt="Icone de Pesquisa">
+        </label>
+
+        <div class="userProfile">
+          <img src="./assets/icon-user.png" alt="Icone de Perfil">
+          <img class="numCartItens" src="./assets/numero-compras.png" alt="Quantidade de itens no carrinho">
+
+          <div class="shoppingCart">
+            <img src="./assets/icone-carrinho-compras.png" alt="Icone carrinho de compras">
+
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="allCategories">
+          <img src="/assets/menu-hamburguer.png" alt="">
+          <li><b>Todas as Categorias</b></li>
+        </div>
+
+        <li>Departamento</li>
+        <li>Departamento</li>
+        <li>Departamento</li>
+        <li>Departamento</li>
+        <li>Departamento</li>
+        <li>Departamento</li>
+        <li>Departamento</li>
+        <li>Departamento</li>
+        
+      </nav>
+    </header>
+
+    <!--------------------------- Footer --------------------------->
+
+    <footer class="footer-container">
+
+      <div class="footer-social-container">
+
+        <div class="avanti-logo-container">
+          <img src="./assets/logo-footer.png" alt="" />
+          <div class="footer-social-media-container">
+            <a href="https://www.instagram.com/avantigroup/" target="_blank"
+              ><img src="./assets/insta.png" alt="Instagram"
+            /></a>
+            <a
+              href="https://www.facebook.com/Avanti-Group-103032205195304"
+              target="_blank"
+              ><img src="./assets/facebook.png" alt="Facebook"
+            /></a>
+            <a href="https://www.youtube.com/@avantigroup" target="_blank"
+              ><img src="./assets/youtube.png" alt="YouTube"
+            /></a>
+            <a
+              href="https://www.tiktok.com/company/avantigroup/"
+              target="_blank"
+              ><img src="./assets/logo-tiktok-svgrepo-com.png" alt="Tiktok"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+
+          <div class="footer-section-desktop">
+            <h4>Institucional</h4>
+            <h5>Sobre Nós</h5>
+            <h5>Nossas Lojas</h5>
+            <h5>Privacidade e Segurança</h5>
+            <h5>Termos e Condições</h5>
+          </div>
+
+          <div class="footer-section-desktop">
+            <h4>Central de ajuda</h4>
+            <h5>Fale Conosco</h5>
+            <h5>Frete e Entrega</h5>
+            <h5>Trocas e Devoluções</h5>
+            <h5>Formas de Pagamento</h5>
+            <h5>FAQ</h5>
+          </div>
+
+          <div class="footer-section-desktop">
+            <h4>Atendimento</h4>
+            <h5><strong>Telefone:</strong> (00) 1234-5678</h5>
+            <h5><strong>E-mail:</strong> exemplo@exemplo.com.br</h5>
+            <h5>
+              <strong>Horário de atendimento:</strong><br />
+              Segunda a Sábado: 07h00 às 23h00<br />
+              Domingos e Feriados: 07h00 às 21h00
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-img-bottom">
+        <img src="./assets/pagamento-desktop.png" alt="" />
+      </div>
+      <div class="footer-info">
+        <div>
+          <p class="footer- info-desktop">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi.
+          </p>
+        </div>
+        <div class="footer-img-bottom">
+          <img src="./assets/img-bottom-fotter.png" alt="" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

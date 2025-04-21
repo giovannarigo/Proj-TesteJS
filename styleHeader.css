@@ -1,13 +1,137 @@
-* {
-    background-color: white;
-    display: flex;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Nunito Sans", sans-serif;
+  color: #333;
 }
+
+/*------------------------------------- Header css ------------------------------------- */
 
 header {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
-    width: 1029px;
-    height: 1200px;
+  display: flex;
+  flex-direction: column;
+  height: 9rem;
+  width: 100%;
 }
 
+    /* Barra de Promoção */
+
+.promotion {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: #005cff;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.coupon {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.discountTen {
+  background: #6220c1;
+  border-radius: 10px;
+  padding: 1px 2px 1px 2px;
+}
+
+    /* Barra de pesquisa e logo */
+
+.topHeader {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+
+.logoHeader {
+  margin: auto 0 auto 10rem;
+  
+}
+
+label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 35rem;
+  height: 2.5rem;
+  margin-right: 10rem;
+
+  border: 1px black solid;
+  border-radius: 10px;
+}
+
+label img {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin: 0.5rem;
+
+  cursor: pointer;
+}
+ 
+.searchBar {
+  width: 34rem;
+  height: 2.2rem;
+  line-height: 1rem;
+  margin-left: 1.5rem;
+  
+  border: transparent;
+  outline: none;
+  font-weight: 600;
+}
+
+    /* icone usuário */
+
+.userProfile {
+  display: flex;
+  margin: auto 10rem auto 0;
+
+  cursor: pointer;
+}
+
+.shoppingCart {
+    display: flex;
+    justify-content: center;
+    margin-left: 0.6rem;
+
+    cursor: pointer;
+}
+
+.numCartItens {
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    left: 3rem;
+    bottom: 5px;
+}
+
+    /* Navegação */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 10.5rem 0 10.5rem;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.allCategories {
+    display: flex;
+}
+
+.allCategories li {
+  margin-left: 0.6rem;
+}
+
+nav li{
+    list-style: none;
+}
