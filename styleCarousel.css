@@ -1,0 +1,159 @@
+.containerCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.infos {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+  text-decoration: underline;
+}
+
+.carousel {
+  height: 426px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.carouselCards {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.newImg {
+  position: absolute;
+  display: flex;
+  margin-right: 7.5rem;
+  top: 0.1rem;
+  z-index: 10;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22.8rem;
+  width: 10.8rem;
+
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+
+.imgClothes {
+  position: absolute;
+  width: 100%;
+  height: 11.25rem;
+  top: 0.75rem;
+}
+
+.title {
+  position: absolute;
+  margin-top: 6rem;
+  width: 100%;
+
+  text-align: center;
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 100%;
+  color: #303030;
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 12rem;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 0 0;
+}
+
+.p1 {
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.p2 {
+  position: relative;
+  bottom: 25px;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.valueOfInstallments {
+  position: absolute;
+  text-align: center;
+  top: 18rem;
+  margin: 0;
+  width: 100%;
+  height: 1rem;
+
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.cashback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  margin: 2rem 1rem 0 0;
+  width: 3rem;
+  height: 1.2rem;
+
+  font-weight: 700;
+  font-size: 11px;
+  color: #ffffff;
+  background: #5ec0be;
+  border-radius: 5px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 9.8rem;
+  height: 2.5rem;
+  margin-top: 19.8rem;
+
+  font-weight: 700;
+  font-size: 14px;
+  background: #005cff;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dotIndicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dot.ativo {
+  background: #303030;
+}

@@ -21,6 +21,8 @@ body {
     justify-content: center;
     gap: 4rem;
     padding: 3rem 0;
+
+    background-color: #e7e7ea;
     border-top: 1px solid #ccc;
   }
   
@@ -55,6 +57,7 @@ body {
     gap: 2rem;
     margin-top: 4rem;
     text-align: center;
+    
   }
   
   .footer-info p {
@@ -64,5 +67,6 @@ body {
   
   .footer-img-bottom {
     margin: auto;
+    
   }
   

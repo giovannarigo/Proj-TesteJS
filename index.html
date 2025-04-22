@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Avanti</title>
     <link rel="stylesheet" href="./styleHeader.css" />
-    <link rel="stylesheet" href="./styleFooter.css">
+    <link rel="stylesheet" href="./styleFooter.css" />
+    <link rel="stylesheet" href="./styleBanner.css" />
+    <link rel="stylesheet" href="./styleCarousel.css"/>
   </head>
   <body>
     <script src="script.js"></script>
@@ -22,26 +24,36 @@
       </div>
 
       <div class="topHeader">
-        <img src="./assets/logo-avanti.png" class="logoHeader" alt="Logo da Avanti" />
+        <img
+          src="./assets/logo-avanti.png"
+          class="logoHeader"
+          alt="Logo da Avanti"
+        />
         <label for="">
           <input class="searchBar" placeholder="Digite o que você procura" />
-          <img src="./assets/icone-lupa.png" alt="Icone de Pesquisa">
+          <img src="./assets/icone-lupa.png" alt="Icone de Pesquisa" />
         </label>
 
         <div class="userProfile">
-          <img src="./assets/icon-user.png" alt="Icone de Perfil">
-          <img class="numCartItens" src="./assets/numero-compras.png" alt="Quantidade de itens no carrinho">
+          <img src="./assets/icon-user.png" alt="Icone de Perfil" />
+          <img
+            class="numCartItens"
+            src="./assets/numero-compras.png"
+            alt="Quantidade de itens no carrinho"
+          />
 
           <div class="shoppingCart">
-            <img src="./assets/icone-carrinho-compras.png" alt="Icone carrinho de compras">
-
+            <img
+              src="./assets/icone-carrinho-compras.png"
+              alt="Icone carrinho de compras"
+            />
           </div>
         </div>
       </div>
 
       <nav>
         <div class="allCategories">
-          <img src="/assets/menu-hamburguer.png" alt="">
+          <img src="/assets/menu-hamburguer.png" alt="" />
           <li><b>Todas as Categorias</b></li>
         </div>
 
@@ -53,16 +65,159 @@
         <li>Departamento</li>
         <li>Departamento</li>
         <li>Departamento</li>
-        
       </nav>
     </header>
+
+    <!--------------------------- Banner --------------------------->
+
+    <div class="banner">
+      <img src="./assets/img-banner-desktop.png" alt="" />
+      <div class="bannerText">
+        <h1>SUPER<span>SALE</span></h1>
+        <h2>Itens selecionados com até</h2>
+        <h2 id="discount">50% OFF</h2>
+      </div>
+    </div>
+
+    <!--------------------------- Carrossel --------------------------->
+
+    <section class="containerCarousel">
+      <div class="infos">
+        <p>Lançamentos</p>
+        <p>Ver mais</p>
+      </div>
+
+      <div class="carousel">
+        <div class="carouselCards">
+
+          <div class="card">
+            <img class="newImg" src="./assets/img-novo-card.png" alt="Icone de item novo">
+            <img class="imgClothes" src="./assets/img-card.png" alt="Imagem da Roupa" />
+            <div class="title">
+              <h3>Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit</h3>
+            </div>
+            <div class="prices">
+              <div class="value">
+                <p class="p1">R$ 100,00</p>
+                <p class="p2">R$ 79,90</p>
+              </div>
+              <div class="cashback">
+                <span>10% OFF</span>
+              </div>
+            </div>
+            <div class="valueOfInstallments">
+              <p>Ou em até <b>10x de R$7,90</b></p>
+            </div>
+            <div class="button">
+              <span>Comprar</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="newImg" src="./assets/img-novo-card.png" alt="Icone de item novo">
+            <img class="imgClothes" src="./assets/img-card.png" alt="Imagem da Roupa" />
+            <div class="title">
+              <h3>Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit</h3>
+            </div>
+            <div class="prices">
+              <div class="value">
+                <p class="p1">R$ 100,00</p>
+                <p class="p2">R$ 79,90</p>
+              </div>
+              <div class="cashback">
+                <span>10% OFF</span>
+              </div>
+            </div>
+            <div class="valueOfInstallments">
+              <p>Ou em até <b>10x de R$7,90</b></p>
+            </div>
+            <div class="button">
+              <span>Comprar</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="newImg" src="./assets/img-novo-card.png" alt="Icone de item novo">
+            <img class="imgClothes" src="./assets/img-card.png" alt="Imagem da Roupa" />
+            <div class="title">
+              <h3>Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit</h3>
+            </div>
+            <div class="prices">
+              <div class="value">
+                <p class="p1">R$ 100,00</p>
+                <p class="p2">R$ 79,90</p>
+              </div>
+              <div class="cashback">
+                <span>10% OFF</span>
+              </div>
+            </div>
+            <div class="valueOfInstallments">
+              <p>Ou em até <b>10x de R$7,90</b></p>
+            </div>
+            <div class="button">
+              <span>Comprar</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="newImg" src="./assets/img-novo-card.png" alt="Icone de item novo">
+            <img class="imgClothes" src="./assets/img-card.png" alt="Imagem da Roupa" />
+            <div class="title">
+              <h3>Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit</h3>
+            </div>
+            <div class="prices">
+              <div class="value">
+                <p class="p1">R$ 100,00</p>
+                <p class="p2">R$ 79,90</p>
+              </div>
+              <div class="cashback">
+                <span>10% OFF</span>
+              </div>
+            </div>
+            <div class="valueOfInstallments">
+              <p>Ou em até <b>10x de R$7,90</b></p>
+            </div>
+            <div class="button">
+              <span>Comprar</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="newImg" src="./assets/img-novo-card.png" alt="Icone de item novo">
+            <img class="imgClothes" src="./assets/img-card.png" alt="Imagem da Roupa" />
+            <div class="title">
+              <h3>Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit</h3>
+            </div>
+            <div class="prices">
+              <div class="value">
+                <p class="p1">R$ 100,00</p>
+                <p class="p2">R$ 79,90</p>
+              </div>
+              <div class="cashback">
+                <span>10% OFF</span>
+              </div>
+            </div>
+            <div class="valueOfInstallments">
+              <p>Ou em até <b>10x de R$7,90</b></p>
+            </div>
+            <div class="button">
+              <span>Comprar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dotIndicator">
+          <span class="dot ativo"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
 
     <!--------------------------- Footer --------------------------->
 
     <footer class="footer-container">
-
       <div class="footer-social-container">
-
         <div class="avanti-logo-container">
           <img src="./assets/logo-footer.png" alt="" />
           <div class="footer-social-media-container">
@@ -86,7 +241,6 @@
         </div>
 
         <div class="footer-links">
-
           <div class="footer-section-desktop">
             <h4>Institucional</h4>
             <h5>Sobre Nós</h5>
