@@ -1,0 +1,21 @@
+.mugBanner {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.mug img {
+  width: 35rem;
+  height: 35rem;
+}
+
+.mugText {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 15%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 3rem;
+  width: 25rem;
+  height: 14rem;
+}

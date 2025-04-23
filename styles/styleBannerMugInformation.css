@@ -1,0 +1,46 @@
+.mugBannerInfo {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+
+  background-color: #dddddd;
+}
+.mugInfoSection {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 3rem;
+    width: 20rem;
+    height: 14rem;
+    
+    font-weight: 400;
+    font-size: 17px;
+}
+.textInfoSection {
+  position: relative;
+  display: flex;
+  margin: 0 3rem 0 0;
+}
+
+.pins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  margin-top: 2.5rem;
+  left: -4rem;
+
+  background-color: #005cff;
+  border-radius: 100%;
+}
+
+.pins img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.imgMugFruits img {
+  width: 35rem;
+  height: 35rem;
+}
