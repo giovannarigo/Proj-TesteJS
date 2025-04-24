@@ -23,14 +23,13 @@
 
 /* Botões de seta */
 
-.leftButton {
+.leftButton, .rightButton{
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: absolute;
   top: 45%;
-  left: -1rem;
   z-index: 11;
   width: 2rem;
   height: 2rem;
@@ -39,6 +38,10 @@
   border: #005cff 1px solid;
   box-shadow: 0px 4px 6px rgb(71, 71, 71);
   cursor: pointer;
+}
+
+.leftButton{
+  left: -1rem;
 }
 
 .leftButton img {
@@ -47,21 +50,7 @@
 }
 
 .rightButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  top: 45%;
   right: -1rem;
-  z-index: 11;
-  width: 2rem;
-  height: 2rem;
-
-  border-radius: 100%;
-  border: #005cff 1px solid;
-  box-shadow: 0px 4px 6px rgb(71, 71, 71);
-  cursor: pointer;
 }
 
 .rightButton img {

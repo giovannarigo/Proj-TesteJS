@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./styles/styleBannerMug.css" />
     <link rel="stylesheet" href="./styles/styleBannerMugInformation.css" />
     <link rel="stylesheet" href="./styles/styleBannerContact.css" />
+    <link rel="stylesheet" href="./styles/styleMenuDropdown.css" />
   </head>
   <body>
-    <script src="script.js"></script>
 
     <!--------------------------- Header --------------------------->
 
@@ -33,9 +33,11 @@
           alt="Logo da Avanti"
         />
         <label for="">
-          <input class="searchBar" placeholder="Digite o que você procura" />
-          <img src="./assets/icone-lupa.png" alt="Icone de Pesquisa" />
+          <input id="searchBar" placeholder="Digite o que você procura" />
+          <img id="searchButton" src="./assets/icone-lupa.png" alt="Icone de Pesquisa" />
+          <div id="searchResult"></div>
         </label>
+
 
         <div class="userProfile">
           <img src="./assets/icon-user.png" alt="Icone de Perfil" />
@@ -59,6 +61,48 @@
           <img src="/assets/menu-hamburguer.png" alt="" />
           <li><b>Todas as Categorias</b></li>
         </div>
+        <div class="menuDropdown">
+          <div class="departments">
+            <p>Departamento</p>
+            <p>Departamento</p>
+            <p>Departamento</p>
+            <p>Departamento</p>
+            <p>Departamento</p>
+            <p>Departamento</p>
+            <p>Departamento</p>
+            <p>Departamento</p>
+          </div>
+
+          <div class="categories">
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+          </div>
+
+          <div class="categories">
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+          </div>
+
+          <div class="categories">
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+            <p>Categoria</p>
+          </div>
+        </div>
 
         <li>Departamento</li>
         <li>Departamento</li>
@@ -73,14 +117,14 @@
 
     <!--------------------------- Banner promoção--------------------------->
 
-    <div class="banner">
+    <section class="banner">
       <img src="./assets/img-banner-desktop.png" alt="" />
       <div class="bannerText">
         <h1>SUPER<span>SALE</span></h1>
         <h2>Itens selecionados com até</h2>
         <h2 id="discount">50% OFF</h2>
       </div>
-    </div>
+    </section>
 
     <!--------------------------- Carrossel --------------------------->
 
@@ -663,5 +707,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

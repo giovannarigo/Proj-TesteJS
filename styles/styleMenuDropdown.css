@@ -1,0 +1,43 @@
+.menuDropdown {
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    left: 11rem;
+    top: 8.8rem;
+   
+    visibility: hidden;
+    background-color: white;
+}
+
+.departments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0.5rem 1rem;
+    
+    width: 8rem;
+    border: 1px solid black;
+}
+
+.departments p {
+    font-weight: 600;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+
+    border: 1px solid black;
+}
+
+.categories p {
+
+    border-bottom: 1px solid black;
+}
+
+.allCategories:hover + .menuDropdown,
+.menuDropdown:hover  {
+    visibility: visible;
+}

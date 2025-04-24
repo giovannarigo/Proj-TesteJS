@@ -60,6 +60,7 @@
 }
 
 .privacyPolicy label {
+  display: flex;
   width: 23rem;
   margin: 0 1rem 0 0;
 
