@@ -35,3 +35,4 @@ searchBar.addEventListener("keydown", (e) => {
 function formatString(value) {
   return value.trim();
 }
+

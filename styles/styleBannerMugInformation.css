@@ -1,4 +1,5 @@
 .mugBannerInfo {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 3rem;
@@ -6,19 +7,23 @@
   background-color: #dddddd;
 }
 .mugInfoSection {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 3rem;
-    width: 20rem;
-    height: 14rem;
-    
-    font-weight: 400;
-    font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 3rem;
+  width: 20rem;
+  height: 14rem;
+
+  font-weight: 400;
+  font-size: 17px;
 }
 .textInfoSection {
   position: relative;
   display: flex;
-  margin: 0 3rem 0 0;
+  margin: 0.5rem 3rem 0 0;
+}
+
+.titleTextInfo h1 {
+  margin-top: 1.5rem;
 }
 
 .pins {
@@ -43,4 +48,53 @@
 .imgMugFruits img {
   width: 35rem;
   height: 35rem;
+}
+
+@media screen and (max-width: 850px) {
+  .mugBannerInfo {
+    flex-direction: column-reverse;
+
+    align-items: center;
+    width: 100%;
+  }
+
+  .titleTextInfo {
+    text-align: center;
+    margin-right: 5rem;
+  }
+
+  .mugInfoSection {
+    width: 80%;
+    height: auto;
+  }
+
+  .pins img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .pins {
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+    left: -6rem;
+
+    background-color: #005cff;
+    border-radius: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mugInfoSection {
+    margin: 0;
+  }
+
+  .textInfoSection {
+    margin: 0 0 0 3rem;
+  }
+
+  .titleTextInfo {
+    text-align: center;
+    margin-right: 0;
+  }
 }

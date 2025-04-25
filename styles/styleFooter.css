@@ -1,28 +1,28 @@
-/*------------------------------------- Footer css ------------------------------------- */
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  font-family: "Nunito Sans", sans-serif;
-  color: #333;
-}
-
 .footer-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.avanti-logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.avanti-logo-container img {
+  margin: 0;
 }
 
 .footer-social-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 4rem;
   padding: 3rem 0;
 
-  background-color: #e7e7ea;
+  background-color: #f5f5f5;
   border-top: 1px solid #ccc;
 }
 
@@ -64,6 +64,150 @@ body {
   line-height: 1.8;
 }
 
-.footer-img-bottom {
+.footer-extra-info {
+  display: block;
+}
+
+.footer-img-bottom-desktop {
   margin: auto;
+}
+
+.footer-img-bottom-mobile {
+  margin: auto;
+  display: none;
+}
+
+.footer-section-mobile {
+  display: none;
+}
+.footer-section-desktop {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-media {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.footer-section-mobile summary {
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  height: 3.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  list-style: none;
+}
+.footer-section-mobile ul {
+  margin: 0;
+  padding: 0 16px 16px 16px;
+  background-color: white;
+  list-style: none;
+}
+.footer-section-mobile ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+summary {
+  list-style: none;
+  width: 100%;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #005cff;
+  border-bottom: 2px solid #005cff;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+details[open] .arrow {
+  transform: rotate(-135deg);
+}
+
+@media screen and (max-width: 1024px) {
+  .avanti-logo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .footer-social-media {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-social-media-container {
+    gap: 3rem;
+  }
+
+  .footer-container {
+    margin: 0;
+  }
+
+  .footer-social-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .footer-links summary {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  .footer-section-mobile {
+    display: block;
+  }
+  .footer-section-desktop {
+    display: none;
+  }
+  .footer-img-bottom-desktop {
+    display: none;
+  }
+
+  .footer-img-bottom-mobile {
+    display: block;
+  }
+
+  .footer-extra-info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    max-width: 100%;
+    max-height: 5rem;
+  }
 }

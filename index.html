@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="./styles/styleBannerMugInformation.css" />
     <link rel="stylesheet" href="./styles/styleBannerContact.css" />
     <link rel="stylesheet" href="./styles/styleMenuDropdown.css" />
+    <link rel="stylesheet" href="./styles/styleNewsletter.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-
+  <body class="container">
     <!--------------------------- Header --------------------------->
 
-    <header>
+    <header class="headerDesktop">
       <div class="promotion">
         <div class="discount">
           Ganhe <span class="discountTen">R$10,00</span> de desconto no seu
@@ -34,10 +35,13 @@
         />
         <label for="">
           <input id="searchBar" placeholder="Digite o que você procura" />
-          <img id="searchButton" src="./assets/icone-lupa.png" alt="Icone de Pesquisa" />
+          <img
+            id="searchButton"
+            src="./assets/icone-lupa.png"
+            alt="Icone de Pesquisa"
+          />
           <div id="searchResult"></div>
         </label>
-
 
         <div class="userProfile">
           <img src="./assets/icon-user.png" alt="Icone de Perfil" />
@@ -115,12 +119,69 @@
       </nav>
     </header>
 
+    <header class="headerMobile">
+      <div class="promotion">
+        <div class="discount">
+          Ganhe <span class="discountTen">R$10,00</span> de desconto no seu
+          primeiro pedido. Utilize o cupom
+          <span class="coupon">DESCONTO10</span>
+        </div>
+      </div>
+      <div class="mobileHeaderContainer">
+        <div class="topHeader">
+          <nav>
+            <div class="allCategories">
+              <img src="/assets/menu-hamburguer.png" alt="" />
+            </div>
+          </nav>
+          <img
+            src="./assets/logo-avanti.png"
+            class="logoHeader"
+            alt="Logo da Avanti"
+          />
+
+          <div class="userProfile">
+            <div class="shoppingCart">
+              <img
+                class="numCartItens"
+                src="./assets/numero-compras.png"
+                alt="Quantidade de itens no carrinho"
+              />
+              <img
+                src="./assets/icone-carrinho-compras.png"
+                alt="Icone carrinho de compras"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="searchBarContainer">
+        <label for="">
+          <input id="searchBar" placeholder="Digite o que você procura" />
+          <img
+            id="searchButton"
+            src="./assets/icone-lupa.png"
+            alt="Icone de Pesquisa"
+          />
+        </label>
+      </div>
+    </header>
+
     <!--------------------------- Banner promoção--------------------------->
 
     <section class="banner">
       <img src="./assets/img-banner-desktop.png" alt="" />
       <div class="bannerText">
         <h1>SUPER<span>SALE</span></h1>
+        <h2>Itens selecionados com até</h2>
+        <h2 id="discount">50% OFF</h2>
+      </div>
+    </section>
+
+    <section class="banner-mobile">
+      <img src="./assets/img-baner.png" alt="" />
+      <div class="bannerText">
+        <h1>SUPER<br /><span>SALE</span></h1>
         <h2>Itens selecionados com até</h2>
         <h2 id="discount">50% OFF</h2>
       </div>
@@ -307,7 +368,7 @@
       </div>
     </section>
 
-    <!--------------------------- Banner Caneca --------------------------->
+    <!-- ------------------------- Banner Caneca ------------------------- -->
 
     <section class="mugBanner">
       <div class="mug">
@@ -607,24 +668,22 @@
       </p>
     </section>
 
-    <section class="newsletterRegister">
-      <div class="tittleNewsletter">
-        <p>Cadastre-se na nossa <span>newsletter</span></p>
-      </div>
-      <div class="userInformations">
-        <input id="username" type="text" placeholder="Digite seu nome" />
-        <input id="userEmail" type="text" placeholder="Digite seu email" />
-
-        <div class="privacyPolicy">
-          <label class="checkbox">
-            <input type="checkbox" />
-            <p>Estou de acordo com a <span>Política de Privacidade</span></p>
+    <!--------------------------- Newsletter --------------------------->
+    <section class="newsletter">
+      <h5 class="newsletterTitle">
+        Cadastre-se na nossa <span>newsletter</span>
+      </h5>
+      <div class="newsletterContainer">
+        <form class="newsletterForm">
+          <input type="text" placeholder="Digite seu nome" />
+          <input type="text" placeholder="Digite seu e-mail" />
+          <label for="privacyPolicy">
+            <input type="checkbox" class="privacyPolicy" />
+            Estou de acordo com a
+            <a href="#">Política de Privacidade</a>
           </label>
-        </div>
-
-        <div class="register">
-          <button>Cadastrar</button>
-        </div>
+          <input class="button" type="submit" value="Cadastrar" />
+        </form>
       </div>
     </section>
 
@@ -632,65 +691,106 @@
 
     <footer class="footer-container">
       <div class="footer-social-container">
-        <div class="avanti-logo-container">
-          <img src="./assets/logo-footer.png" alt="" />
-          <div class="footer-social-media-container">
-            <a href="https://www.instagram.com/avantigroup/" target="_blank"
-              ><img src="./assets/insta.png" alt="Instagram"
-            /></a>
-            <a
-              href="https://www.facebook.com/Avanti-Group-103032205195304"
-              target="_blank"
-              ><img src="./assets/facebook.png" alt="Facebook"
-            /></a>
-            <a href="https://www.youtube.com/@avantigroup" target="_blank"
-              ><img src="./assets/youtube.png" alt="YouTube"
-            /></a>
-            <a
-              href="https://www.tiktok.com/company/avantigroup/"
-              target="_blank"
-              ><img src="./assets/logo-tiktok-svgrepo-com.png" alt="Tiktok"
-            /></a>
+        <div class="footer-social-media">
+          <div class="avanti-logo-container">
+            <img src="./assets/logo-footer.png" alt="" />
+            <div class="footer-social-media-container">
+              <a href="https://www.instagram.com/avantigroup/" target="_blank"
+                ><img src="./assets/insta.png" alt="Instagram"
+              /></a>
+              <a
+                href="https://www.facebook.com/Avanti-Group-103032205195304"
+                target="_blank"
+                ><img src="./assets/facebook.png" alt="Facebook"
+              /></a>
+              <a href="https://www.youtube.com/@avantigroup" target="_blank"
+                ><img src="./assets/youtube.png" alt="YouTube"
+              /></a>
+              <a
+                href="https://www.tiktok.com/company/avantigroup/"
+                target="_blank"
+                ><img src="./assets/logo-tiktok-svgrepo-com.png" alt="Tiktok"
+              /></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-section-desktop">
+              <h4>Institucional</h4>
+              <h5>Sobre Nós</h5>
+              <h5>Nossas Lojas</h5>
+              <h5>Privacidade e Segurança</h5>
+              <h5>Termos e Condições</h5>
+            </div>
+
+            <div class="footer-section-desktop">
+              <h4>Central de ajuda</h4>
+              <h5>Fale Conosco</h5>
+              <h5>Frete e Entrega</h5>
+              <h5>Trocas e Devoluções</h5>
+              <h5>Formas de Pagamento</h5>
+              <h5>FAQ</h5>
+            </div>
+
+            <div class="footer-section-desktop">
+              <h4>Atendimento</h4>
+              <h5><strong>Telefone:</strong> (00) 1234-5678</h5>
+              <h5><strong>E-mail:</strong> exemplo@exemplo.com.br</h5>
+              <h5>
+                <strong>Horário de atendimento:</strong><br />
+                Segunda a Sábado: 07h00 às 23h00<br />
+                Domingos e Feriados: 07h00 às 21h00
+              </h5>
+            </div>
+          </div>
+          <!-- mobile -->
+          <div class="footer-links">
+            <details class="footer-section-mobile">
+              <summary>Institucional <span class="arrow"></span></summary>
+              <ul>
+                <li>Sobre Nós</li>
+                <li>Nossas Lojas</li>
+                <li>Privacidade e Segurança</li>
+                <li>Termos e Condições</li>
+              </ul>
+            </details>
+
+            <details class="footer-section-mobile">
+              <summary>Institucional <span class="arrow"></span></summary>
+              <ul>
+                <li>Fale Conosco</li>
+                <li>Frete e Entrega</li>
+                <li>Trocas e Devoluções</li>
+                <li>Formas de Pagamento</li>
+                <li>FAQ</li>
+              </ul>
+            </details>
+
+            <details class="footer-section-mobile">
+              <summary>Institucional <span class="arrow"></span></summary>
+              <ul>
+                <li><strong>Telefone:</strong> (00) 1234-5678</li>
+                <li><strong>E-mail:</strong> exemplo@exemplo.com.br</li>
+                <li>
+                  <strong>Horário de atendimento:</strong><br />
+                  Segunda a Sábado: 07h00 às 23h00<br />
+                  Domingos e Feriados: 07h00 às 21h00
+                </li>
+              </ul>
+            </details>
           </div>
         </div>
-
-        <div class="footer-links">
-          <div class="footer-section-desktop">
-            <h4>Institucional</h4>
-            <h5>Sobre Nós</h5>
-            <h5>Nossas Lojas</h5>
-            <h5>Privacidade e Segurança</h5>
-            <h5>Termos e Condições</h5>
-          </div>
-
-          <div class="footer-section-desktop">
-            <h4>Central de ajuda</h4>
-            <h5>Fale Conosco</h5>
-            <h5>Frete e Entrega</h5>
-            <h5>Trocas e Devoluções</h5>
-            <h5>Formas de Pagamento</h5>
-            <h5>FAQ</h5>
-          </div>
-
-          <div class="footer-section-desktop">
-            <h4>Atendimento</h4>
-            <h5><strong>Telefone:</strong> (00) 1234-5678</h5>
-            <h5><strong>E-mail:</strong> exemplo@exemplo.com.br</h5>
-            <h5>
-              <strong>Horário de atendimento:</strong><br />
-              Segunda a Sábado: 07h00 às 23h00<br />
-              Domingos e Feriados: 07h00 às 21h00
-            </h5>
-          </div>
+        <div class="footer-img-bottom-desktop">
+          <img src="./assets/pagamento-desktop.png" alt="" />
         </div>
-      </div>
 
-      <div class="footer-img-bottom">
-        <img src="./assets/pagamento-desktop.png" alt="" />
+        <div class="footer-img-bottom-mobile">
+          <img src="./assets/pagamento-footer.png" alt="" />
+        </div>
       </div>
       <div class="footer-info">
         <div>
-          <p class="footer- info-desktop">
+          <p class="footer-extra-info">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation

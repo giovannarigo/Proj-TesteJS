@@ -1,9 +1,21 @@
 .banner {
+  margin-top: 2rem;
   position: relative;
   display: flex;
   justify-content: center;
 
   background-color: #e7e7ea;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.banner-mobile {
+  display: none;
 }
 
 .bannerText {
@@ -39,4 +51,50 @@
   font-weight: 600;
   font-size: 50px;
   color: #005cff;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner img {
+    width: 40%; /* Reduz a largura da imagem em telas menores */
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    display: none;
+  }
+
+  .banner-mobile img {
+    width: 60%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .banner-mobile {
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e7e7ea;
+  }
+  .bannerText h1 {
+    font-size: 3rem;
+  }
+
+  .bannerText {
+    margin: 0;
+  }
+
+  .bannerText h2 {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  #discount {
+    font-size: 2rem;
+  }
 }

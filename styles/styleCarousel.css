@@ -23,7 +23,8 @@
 
 /* Botões de seta */
 
-.leftButton, .rightButton{
+.leftButton,
+.rightButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +41,7 @@
   cursor: pointer;
 }
 
-.leftButton{
+.leftButton {
   left: -1rem;
 }
 
@@ -129,7 +130,7 @@
 
 .p2 {
   position: relative;
-  bottom: 25px;
+  bottom: 1rem;
 
   font-size: 15px;
   font-weight: 600;
@@ -138,7 +139,7 @@
 .valueOfInstallments {
   position: absolute;
   text-align: center;
-  top: 18rem;
+  top: 19rem;
   margin: 0;
   width: 100%;
   height: 1rem;
@@ -153,7 +154,6 @@
   justify-content: center;
   padding: 0.25rem 0.5rem;
   margin: 2rem 1rem 0 0;
-  width: 3rem;
   height: 1.2rem;
 
   font-weight: 700;
@@ -200,4 +200,15 @@
 
 .dot.ativo {
   background: #303030;
+}
+
+@media screen and (max-width: 1024px) {
+  .cashback span {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    height: 22.8rem;
+    width: 10.8rem;
+  }
 }
